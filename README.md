@@ -128,5 +128,5 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 > *"We, the People of India, having solemnly resolved to constitute India into a Sovereign Socialist Secular Democratic Republic..."*
-> — Preamble to the Constitution of India 🇮🇳
+> — Preamble to the Constitution of India 🇮🇳.
 
