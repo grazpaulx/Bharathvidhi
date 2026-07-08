@@ -28,6 +28,7 @@ Whether you're a student, a legal enthusiast, or just a curious citizen — Bhar
 ## 📸 Screenshots
 
 ### Login Page
+![Login Page](https://github.com/grazpaulx/Bharathvidhi/blob/master/Screenshot%202026-07-08%20122447.png)
 ![Login Page]()
 
 ---
