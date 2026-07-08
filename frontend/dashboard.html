@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat Vidhi Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Playfair+Display:wght@700&family=Cormorant+Garamond:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="title-container">
+                <img src="images (1).png" alt="Logo" class="logo">
+                <div class="title">
+                    <h1 class="main-title">BharatVidhi</h1>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Content Section -->
+        <div class="dashboard-content">
+            <h2 id="welcomeMessage">Welcome!</h2>
+            <p>Start exploring the Indian Constitution, justice, liberty, and equality principles.</p>
+            <div class="dashboard-buttons">
+                <a href="#" class="dashboard-btn">Explore Articles</a>
+                <a href="#" class="dashboard-btn">Learn More</a>
+                <a href="#" class="dashboard-btn">Settings</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Retrieve the username from the URL
+        const params = new URLSearchParams(window.location.search);
+        const username = params.get('username'); // Get the 'username' parameter
+
+        // Display the username in the welcome message
+        const welcomeMessage = document.getElementById('welcomeMessage');
+        if (username) {
+            welcomeMessage.textContent = `Welcome, ${username}!`;
+        } else {
+            welcomeMessage.textContent = "Welcome, Guest!";
+        }
+    </script>
+</body>
+</html>

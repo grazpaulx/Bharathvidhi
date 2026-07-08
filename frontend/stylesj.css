@@ -1,0 +1,112 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Centering the Quiz Box */
+body {
+    background-image: url('constitution.jpeg.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Quiz Card */
+.quiz-container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 25px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 2px solid #ffcc33;
+    transition: 0.3s ease-in-out;
+}
+
+/* Heading */
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+    color:  dark brown;
+    text-align: center;
+    text-shadow: 3px 3px 10px rgba(165, 32, 2, 0.6);
+}
+
+/* Question */
+.question-container {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Options */
+#options button {
+    display: block;
+    width: 100%;
+    background: linear-gradient(90deg, #ff9800, #ff5722);
+    border: none;
+    padding: 12px;
+    margin: 10px 0;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+#options button:hover {
+    background: linear-gradient(90deg, #d84315, #bf360c);
+    transform: scale(1.03);
+}
+
+/* Correct Answer */
+.correct {
+    background: linear-gradient(90deg, #4CAF50, #2E7D32) !important;
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.6);
+}
+
+/* Incorrect Answer */
+.incorrect {
+    background: linear-gradient(90deg, #D32F2F, #B71C1C) !important;
+    box-shadow: 0 0 15px rgba(211, 47, 47, 0.6);
+}
+
+/* Next Button */
+#next-btn {
+    background: linear-gradient(90deg, gold, brown);
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(255, 107, 107, 0.3);
+    margin-top: 10px;
+    display: block;
+    
+    margin: 20px auto; 
+    text-align: center;
+}
+
+/* Score */
+#score {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}

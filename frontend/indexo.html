@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <header>
+        <div class="logo-container">
+            <img src="images (1).png" alt="Bharat Vidhi Logo" class="logo">
+            <span class="site-title">BHARATVIDHI</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="indexr.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="getpremium.html" class="btn">Get Premium</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Profile Content -->
+    <div class="profile-container">
+        <!-- Profile Card -->
+        <div class="profile-card">
+            <img src="frontend/WhatsApp Image 2025-03-22 at 14.44.03_781fb5e5.jpg" alt="Profile Picture" class="profile-pic">
+            <h2 id="profile-name">John Doe</h2>
+            <p>Student | Constitution Studies</p>
+            <button class="edit-btn">✏ Edit Profile</button>
+        </div>
+       
+        <!-- Enrolled Courses -->
+        <div class="courses-section">
+            <h3>Enrolled Courses</h3>
+            <div class="course">
+                📖 <strong>Fundamentals of the Constitution</strong>
+                <p>Instructor: Jane Smith</p>
+            </div>
+            <div class="course">
+                📖 <strong>Legal Frameworks & Rights</strong>
+                <p>Instructor: Dr. Alan White</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        // Retrieve the username from localStorage
+        const profileName = document.getElementById("profile-name");
+        const username = localStorage.getItem("username");
+
+        // If username exists in localStorage, update the profile name
+        if (username) {
+            profileName.textContent = username;
+        }
+    </script> -->
+
+    <script>
+        // Retrieve the username from localStorage
+        const profileName = document.getElementById("profile-name");
+        const username = localStorage.getItem("username");
+      
+        // If username exists in localStorage, update the profile name
+        if (username) {
+          profileName.textContent = username;
+        } else {
+          profileName.textContent = "Guest"; // Fallback for missing username
+        }
+      </script>
+         
+</body>
+</html>

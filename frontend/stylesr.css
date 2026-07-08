@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #2d0701f3;
+    color: white;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: #490303f2;
+    color: white;
+    padding: 80px 40px;
+}
+
+.hero h2 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 20px 40px;
+    background-color: white;
+    color: #4d1810f6;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.feature {
+    background: white;
+    padding: 130px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* width: 300px;
+    height: 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
+}
+
+.feature h3 {
+    font-size: 2em;
+    padding: 20px;
+}
+
+.feature p {
+    font-size: 1.5em;
+}
+
+ .feature:nth-child(1) {
+    background-image: url("t2.webp"); /* Replace with your actual image path */
+ }
+
+ .feature:nth-child(2) {
+    background-image: url("t2.webp"); /* Replace with your actual image path */
+ }
+
+ .feature:nth-child(3) {
+    background-image: url("t2.webp"); /* Replace with your actual image path */
+ }
+
+ /* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background: url('Screenshot 2025-03-22 112900.png') no-repeat center center/cover;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d0701f3;
+    padding: 15px 30px;
+    color: white;
+}
+
+/* Logo and Title */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.site-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* NowPass Button */
+.btn {
+    background-color: #ffcc00;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff9900;
+}
+
+
+
+footer {
+    background: #1b1a1a;
+    color: white;
+    padding: 25px;
+    margin-top: 220px;
+}

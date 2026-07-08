@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BharatVidhi</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Playfair+Display:wght@700&family=Cormorant+Garamond:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="title-container">
+                <img src="images (1).png" alt="Logo" class="logo">
+                <div class="title">
+                    <h1 class="main-title">Bharat Vidhi</h1>
+                    <p class="caption">Your Guide to the Indian Constitution</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content-wrapper">
+            <!-- Description Section -->
+            <div class="description">
+                <h2 class="description-title">
+                    <span>Explore</span> <span>the</span> <span>Indian</span> <span>Constitution</span>
+                    <span>Dive</span> <span>into</span> <span>the</span> <span>core</span> <span>principles</span> <span>of</span> 
+                    <span>justice,</span> <span>liberty,</span> <span>and</span> <span>equality</span> <span>enshrined</span> 
+                    <span>in</span> <span>the</span> <span>Indian</span> <span>Constitution</span> <span>BharatVidhi</span>
+                </h2>
+            </div>
+            
+            <!-- Login Section -->
+            <div class="login-container" id="login-box">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <input type="text" id="username" placeholder="Enter Username" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p class="signup-link">
+                    Not a member? <a href="#" id="signup-link">Signup</a>
+                </p>
+            </div>
+            
+            <script>
+                document.getElementById('loginForm').addEventListener('submit', function (e) {
+                    e.preventDefault(); // Prevent default form submission
+                    const username = document.getElementById('username').value;
+                    const password = document.getElementById('password').value;
+            
+                    if (username && password) {
+                        // Redirect to dashboard.html
+                        window.location.href = "dashboard.html";
+                    } else {
+                        alert("Please enter valid credentials!");
+                    }
+                });
+            </script>
+            
+
+            <!-- Signup Section -->
+            <div class="signup-container" id="signup-box" style="display: none;">
+                <h2>Signup</h2>
+                <form id="signupForm">
+                    <input type="text" id="signup-username" placeholder="Enter Username" required>
+                    <input type="email" id="signup-email" placeholder="Enter Email" required>
+                    <input type="password" id="signup-password" placeholder="Password" required>
+                    <input type="text" id="signup-phone" placeholder="Phone Number" required>
+                    <button type="submit">Signup</button>
+                </form>
+                <p class="login-link">
+                    Already a member? <a href="#" id="login-link">Login</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
